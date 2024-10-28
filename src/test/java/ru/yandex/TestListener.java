@@ -14,7 +14,7 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
         Object currentClass = result.getInstance();
-        WebDriver driver = ((FirstTest) currentClass).getDriver();
+        WebDriver driver = ((WebDriverManager) currentClass).getDriver();
 
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
