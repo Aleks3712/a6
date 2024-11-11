@@ -2,8 +2,9 @@
 <suite name="ParallelTestSuite" parallel="classes" thread-count="2">
     <test name="ParallelTests">
         <classes>
-            <class name="ru.yandex.GoogleTest"/>
-            <class name="ru.yandex.YandexTest"/>
+            <class name="test.GoogleTest"/>
+            <class name="test.YandexTest"/>
+            <class name="test.StatusCodeTest"/>
         </classes>
     </test>
 </suite>
